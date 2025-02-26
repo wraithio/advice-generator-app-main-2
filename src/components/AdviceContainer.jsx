@@ -22,9 +22,9 @@ const AdviceContainer = () => {
 
   const updateDivider = () => {
     if (window.innerWidth <= 600) {
-      divider.src = "public/images/pattern-divider-mobile.svg";
+      divider.src = "/images/pattern-divider-mobile.svg";
     } else {
-      divider.src = "public/images/pattern-divider-desktop.svg";
+      divider.src = "/images/pattern-divider-desktop.svg";
     }
   };
   window.addEventListener("resize", () => {
