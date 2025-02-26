@@ -23,6 +23,6 @@ github [here](https://github.com/wraithio/advice-generator-app-main-2)
 
 vercel [here](https://advice-generator-app-main-2.vercel.app/)
 
-peer review by :
+peer review by : Gianpaolo Reinares
 
-comments :
+comments : Everything looks good; Randomly generates advice after every click; in your 'updateDivider' section, just remove the 'public' is it kind of messes with the responsiveness; besides that, everything else works great.
