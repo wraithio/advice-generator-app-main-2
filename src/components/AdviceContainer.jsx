@@ -20,7 +20,7 @@ const AdviceContainer = () => {
 
   return (
     <div className="min-h-screen flex justify-center place-items-center">
-      <div className="w-[50%] bg-slate-700 flex flex-col gap-8 pt-16 rounded-2xl shadow-2xl">
+      <div className="lg:w-[50%] sm:w-[75%] w-[95%] bg-slate-700 flex flex-col gap-8 pt-16 rounded-2xl shadow-2xl">
         <div className="flex gap-2 text-green-400 text-2xl text-center tracking-[.5rem]">
           <div className=" flex justify-end w-[55%]">
             <h5>ADVICE</h5>
@@ -33,7 +33,7 @@ const AdviceContainer = () => {
           <h3 className="text-center text-white text-5xl" >"{entry.advice}"</h3>
         </div>
         <img
-          src="/images/pattern-divider-desktop.svg"
+          src="public/images/pattern-divider-desktop.svg"
           alt="pattern divider"
           className="mx-20 my-4"
         />
@@ -44,7 +44,7 @@ const AdviceContainer = () => {
           >
             <div className="flex justify-center place-items-center">
               <img
-                src="/images/icon-dice.svg"
+                src="public/images/icon-dice.svg"
                 alt="dice icon"
                 className="w-8"
               />
