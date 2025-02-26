@@ -45,7 +45,7 @@ const AdviceContainer = () => {
           <h3 className="text-center text-blue-100 sm:text-5xl text-4xl">"{entry.advice}"</h3>
         </div>
         <img
-          src="public/images/pattern-divider-desktop.svg"
+          src="/images/pattern-divider-desktop.svg"
           alt="pattern divider"
           className="mx-20 my-4"
           id="divider"
@@ -57,7 +57,7 @@ const AdviceContainer = () => {
           >
             <div className="flex justify-center place-items-center">
               <img
-                src="public/images/icon-dice.svg"
+                src="/images/icon-dice.svg"
                 alt="dice icon"
                 className="w-8"
               />
