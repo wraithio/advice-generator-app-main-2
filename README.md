@@ -21,7 +21,7 @@ Requirements:
 
 github [here](https://github.com/wraithio/advice-generator-app-main-2)
 
-vercel [here](https://a-robinson-c5-budget.vercel.app/)
+vercel [here](https://advice-generator-app-main-2.vercel.app/)
 
 peer review by :
 
