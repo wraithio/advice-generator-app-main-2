@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Hanken";
+  src: url(/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+body{
+  background-color: rgb(32, 38, 50);
+  font-family: "Hanken",Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.container{
+  background-color: rgb(49, 58, 73);
+}
+
+.neon-button {
+  transition: box-shadow 0.4s ease;
+ }
+ 
+ 
+ .neon-button::before {
+  transition: opacity 0.4s ease;
+ }
+ 
+ 
+ .neon-button:hover::before {
+  opacity: 0;
+ }
+ 
+ 
+ .neon-button:hover {
+  box-shadow: 0 0 10px #31c48d, 0 0 20px #31c48d, 0 0 30px #31c48d;
+  cursor: pointer;
+ }
