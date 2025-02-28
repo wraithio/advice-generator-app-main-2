@@ -18,8 +18,7 @@ const AdviceContainer = () => {
     storeEntry();
   }, []);
 
-  const mediaQuery = window.matchMedia("(max-width: 600px)");
-
+  //changes divider similar to breakpoints
   const updateDivider = () => {
     if (window.innerWidth <= 600) {
       divider.src = "/images/pattern-divider-mobile.svg";
@@ -27,13 +26,14 @@ const AdviceContainer = () => {
       divider.src = "/images/pattern-divider-desktop.svg";
     }
   };
+  //live updating
   window.addEventListener("resize", () => {
     updateDivider();
   });
   return (
     <div className="min-h-screen flex justify-center place-items-center">
-      <div className="lg:w-[50%] sm:w-[75%] w-[90%] bg-slate-700 flex flex-col gap-8 pt-16 rounded-2xl shadow-2xl">
-        <div className="flex gap-2 text-green-400 text-2xl text-center tracking-[.5rem]">
+      <div className="relative lg:w-[50%] sm:w-[75%] w-[90%] bg-slate-700 flex flex-col gap-8 pt-16 transition-all duration-500 ease-in-out rounded-2xl shadow-2xl">
+        <div className="flex gap-2 text-green-400 text-xl text-center tracking-[.5rem]">
           <div className=" flex justify-end w-[55%]">
             <h5>ADVICE</h5>
           </div>
@@ -47,13 +47,13 @@ const AdviceContainer = () => {
         <img
           src="/images/pattern-divider-desktop.svg"
           alt="pattern divider"
-          className="mx-20 my-4"
+          className="mx-8 sm:mx-14 mb-12"
           id="divider"
         />
-        <div className="flex justify-center">
+        <div className="flex justify-center place-items-center bottom-0 h-0">
           <button
             onClick={storeEntry}
-            className="bg-green-400 w-fit rounded-full p-8 xl:mb-[-5%] sm:mb-[-7%] mb-[-10%] neon-button"
+            className="bg-green-400 w-fit rounded-full p-8 neon-button"
           >
             <div className="flex justify-center place-items-center">
               <img
